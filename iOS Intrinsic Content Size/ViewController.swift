@@ -51,12 +51,16 @@ class ViewController: UIViewController {
         textView.topAnchor.constraintEqualToAnchor(view.topAnchor, constant: 120).active = true
         textView.leadingAnchor.constraintEqualToAnchor(view.leadingAnchor, constant: 10).active = true
         textView.widthAnchor.constraintEqualToConstant(200).active = true
-        
+        textView.heightAnchor.constraintEqualToConstant(100).active = true
         
         
         button.leadingAnchor.constraintEqualToAnchor(textView.trailingAnchor).active = true
         button.firstBaselineAnchor.constraintEqualToAnchor(textView.lastBaselineAnchor).active = true
-        textView.scrollEnabled = false
+        
+        textView.scrollEnabled = true
+        
+        
+        
     
     }
 
