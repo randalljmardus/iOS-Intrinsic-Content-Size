@@ -27,7 +27,34 @@ class ViewController: UIViewController {
         nameLabel.topAnchor.constraintEqualToAnchor(view.topAnchor, constant: 40).active = true
         nameLabel.leadingAnchor.constraintEqualToAnchor(view.leadingAnchor, constant: 10).active = true
         
-    
+        let button = UIButton()
+        button.setTitle("UIButton", forState: .Normal)
+        
+        let blue = UIColor(hue: 212/360, saturation: 0.67, brightness: 0.89, alpha: 1)
+        
+        button.backgroundColor = blue
+        button.translatesAutoresizingMaskIntoConstraints = false
+        
+        view.addSubview(button)
+        
+     //   button.leadingAnchor.constraintEqualToAnchor(nameLabel.leadingAnchor).active = true
+     //   button.topAnchor.constraintEqualToAnchor(nameLabel.bottomAnchor, constant: 20).active = true
+        
+        
+        let textView = UITextView()
+        textView.text = "Lorem ipsum"
+        
+        textView.backgroundColor = UIColor(hue: 104/360, saturation: 0.74, brightness: 0.85, alpha: 1)
+        textView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(textView)
+        
+        textView.topAnchor.constraintEqualToAnchor(view.topAnchor, constant: 120).active = true
+        textView.leadingAnchor.constraintEqualToAnchor(view.leadingAnchor, constant: 10).active = true
+        
+        
+        button.leadingAnchor.constraintEqualToAnchor(textView.trailingAnchor).active = true
+        button.firstBaselineAnchor.constraintEqualToAnchor(textView.lastBaselineAnchor).active = true
+        textView.scrollEnabled = false
     
     }
 
