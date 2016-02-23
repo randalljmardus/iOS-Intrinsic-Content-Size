@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         
         
         let textView = UITextView()
-        textView.text = "Lorem ipsum"
+        textView.text = "textView.text = Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
         
         textView.backgroundColor = UIColor(hue: 104/360, saturation: 0.74, brightness: 0.85, alpha: 1)
         textView.translatesAutoresizingMaskIntoConstraints = false
@@ -50,6 +50,8 @@ class ViewController: UIViewController {
         
         textView.topAnchor.constraintEqualToAnchor(view.topAnchor, constant: 120).active = true
         textView.leadingAnchor.constraintEqualToAnchor(view.leadingAnchor, constant: 10).active = true
+        textView.widthAnchor.constraintEqualToConstant(200).active = true
+        
         
         
         button.leadingAnchor.constraintEqualToAnchor(textView.trailingAnchor).active = true
